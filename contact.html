@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=VT323&display=swap" rel="stylesheet">
+  <title>Contact</title>
+
+
+  <script></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      padding: 0px;
+      border: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    #menu-button{
+            display: block;
+            background-color: white;
+            cursor: pointer;
+        }
+        header{
+            padding: 2em;
+        }
+        body{
+      font-size: 1rem;
+      font-family: "Shadows Into Light";
+    }
+    #title{
+            display: flex;
+            align-items: center;
+        }
+    #ul-l1{
+        display: none;
+        flex-direction: column;
+
+    }
+    #l1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-end; */
+        align-items: flex-end;
+    }
+    ul{
+            gap: 2em;
+
+        }
+    #l2{
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #l2 > li{
+        padding: 0.5em 1em;
+        border: 1px dashed black;
+        border-radius: 1em;
+    } 
+    li,a{
+            list-style: none;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            display: inline;
+            
+        }
+        #uzumaki{
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            0% {transform: rotate(360deg);}
+            
+        }
+        #vara-container{
+            width: 130px;
+
+        }
+  
+    .blue{
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      
+    
+    }
+    #container{
+      background-color: white;
+      width: 100%;
+      max-width: 850px;
+      }
+    .text{
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .text > *{
+      margin-bottom: 1rem;
+    }
+    li{
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+    }
+    li::before{
+      content: url(assets/images/icon-list.svg);
+      margin-right: 0.7em;
+    }
+    h1{
+      font-size: 3rem;
+      color: hsl(234, 29%, 20%);
+      font-weight: 800;
+    }
+    #email{
+    display: block;
+    border: 1px solid gray;
+    width: 90%;
+    padding: 1em 1em;
+    margin: 1em 0em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+   }
+   #email:focus-visible, #email:focus{
+    outline: none;
+    border: 2px solid black;
+   }
+  
+   #button{
+    background-color: black;
+    width: 90%;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 1rem;
+    }
+  #button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+   }
+   .labels{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+   }
+   span{
+    color: red;
+    display: none;
+   }
+  .success{
+    display: none;
+    max-width: 700px;
+    background-color: white;
+    padding: 1em;
+    flex-direction: column;
+  }
+  .success > *{
+    margin-bottom: 2rem;
+  }
+    /*/////DESKTOP///////////////////////////////// */
+    @media screen and (min-width: 850px) {
+      .blue{
+        height: 100dvh;
+      }
+      #container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 1em;
+      }
+    
+    header{
+            margin-bottom: 1em;
+        }
+ 
+        #l1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+      
+        button{
+            background-color: white;
+        }
+        #ul-l1{
+            display: flex;
+            flex-direction: row;
+            gap: 3em;
+
+
+        }
+        
+        li:hover{
+            text-decoration: underline;
+
+        }
+
+        button:hover{
+            cursor: pointer;
+            
+        }
+        #menu-button{
+            display: none;
+        }
+       
+        #l2{
+            display: none;
+        }
+      
+      }
+      
+ /* change padding, border, margin values when we get font size */
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="l1">
+                <div id = "title">
+                    <img src="spiral.svg" alt="" width="40px" id="uzumaki">
+                    <a href = "/" id="vara-container"></a>
+                </div>
+                <button id="menu-button"><img src="ham.svg" alt="" width="40px"></button>
+                <ul id ="ul-l1">
+                    <li><a href="about-me.html">About me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <ul id = "l2">
+                <li><a href="about-me.html">About me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class = "blue">
+    <div class="success">
+      <img src="assets/images/icon-success.svg" alt="">
+      <div class="text">
+        <h1>Thanks for subscribing!</h1>
+        <p> A confirmation email has been sent to you. Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button id = "dismiss-button">Dismiss message </button>
+
+      </div>
+    <div id = "container">
+        
+      <picture>
+        <source srcset="Uzumaki_Featured-1000x700.jpg" media="(min-width:850px)">
+        <source srcset="Uzumaki_Featured-1000x700.jpg">
+        <img src="hero.jpg" alt="" width="100%">
+      </picture>
+      <div class="text">
+        <h1>Curiosity piqued? Sign up for updates on me.</h1>
+        <form action="" novalidate>
+          <div>
+            <div class="labels">
+              <label for="email">Email address</label>
+              <span>Valid email required.</span>
+            </div>
+            
+            <input id="email" type="email" name="email" 
+            placeholder="email@company.com">
+          </div>
+          <button id="button">Subscribe for monthly updates</button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="vara.min.js" type="text/javascript"></script>
+  <script src="app.js" ></script>
+  <script src="valid.js" ></script>
+</body>
+</html>
